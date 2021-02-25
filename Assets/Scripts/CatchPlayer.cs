@@ -25,6 +25,8 @@ public class CatchPlayer : MonoBehaviour
 
         navMeshAgent.SetDestination(cheese.position);
         animator.SetFloat("Speed", 0.7f);
+        transform.LookAt(cheese); //Supposed to make the mouse point towards the cheese?
+
 
     }
 }
